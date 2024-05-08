@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ChatBot from './components/chatbot';
+import Background from './assets/Background.jpg';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex', justifyContent: 'end', paddingRight:'20px',alignItems:'center',backgroundImage: `url(${Background})`,
+    backgroundSize:'100% 120%',
+    backgroundRepeat:'no-repeat' ,backgroundColor: '#F8F8F8', height: '100vh' }}>
+      <div>
+        <ChatBot />
+      </div>
     </div>
+
   );
 }
 
